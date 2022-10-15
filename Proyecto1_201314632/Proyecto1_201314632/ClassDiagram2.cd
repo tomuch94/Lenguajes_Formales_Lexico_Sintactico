@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Proyecto1_201314632.Form1">
+    <Position X="0.5" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>I4EACAAAACEgBCiCIGCAARACAQJQQABhAgQgABEACAE=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto1_201314632.frmacercade">
+    <Position X="4.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>frmacercade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto1_201314632.Lista">
+    <Position X="6.75" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAABAAAAAAAAAgAAAAAQAIAAAAgA=</HashCode>
+      <FileName>Lista.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto1_201314632.Nodo">
+    <Position X="4.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAABAACEAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Nodo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto1_201314632.reporte_html">
+    <Position X="4.5" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAABEAAAAAAAAAAAQAA=</HashCode>
+      <FileName>reporte_html.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto1_201314632.simbolo">
+    <Position X="7.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAABAAAARAAAAEgAAAGAGAAAABAACAogAAAQgA=</HashCode>
+      <FileName>simbolo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

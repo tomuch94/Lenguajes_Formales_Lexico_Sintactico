@@ -1,0 +1,90 @@
+
+S -> E
+
+E -> INICIO E2
+
+E2 -> INICIO E2
+     |Epsilon
+	 
+INICIO -> /** configuracion L_CONT_CONF configuracion **/
+
+L_CONT_CONF -> CONT_CONF L_CONT_CONF2
+
+L_CONT_CONF2 -> CONT_CONF L_CONT_CONF2
+                |Epsilon
+			
+CONT_CONF -> # SCONT_C #
+
+SCONT_C -> Juego LCONT_JUEGO Juego
+         |usuario LCONT_USUARIO usuario
+		 |vocabulario LCONT_VOCABULARIO vocabulario
+		
+					
+//MODULO VOCABULARIO
+
+LCONT_VOCABULARIO -> CONT_VOCABULARIO LCONT_VOCABULARIO2
+
+LCONT_VOCABULARIO2 -> CONT_VOCABULARIO LCONT_VOCABULARIO2
+					| Epsilon
+					
+CONT_VOCABULARIO -> #idioma ="id"# #Palabra="id"# #Longitud="numero"# #Pista1="id"# #Pista2="id"#					
+
+
+
+	
+//MODULO JUEGO
+		
+LCONT_JUEGO -> CONT_JUEGO LCONT_JUEGO2
+
+LCONT_JUEGO2 -> CONT_JUEGO LCONT_JUEGO2
+				| Epsilon
+		 
+CONT_JUEGO -> # SCONT_JUEGO #
+
+SCONT_JUEGO -> niveles LCONT_NIVELES niveles
+			| tiempo LCONT_TIEMPO tiempo
+			| sonido LCONT_SA sonido
+			| ahorcado LCONT_SA ahorcado
+			
+LCONT_NIVELES -> CONT_NIVELES LCONT_NIVELES2 
+
+LCONT_NIVELES2 -> CONT_NIVELES LCONT_NIVELES2
+				| Epsilon
+				
+CONT_NIVELES -> # SCONT_NT #
+
+			
+LCONT_TIEMPO -> CONT_TIEMPO LCONT_TIEMPO2 
+
+LCONT_TIEMPO2 -> CONT_TIEMPO LCONT_TIEMPO2
+				| Epsilon
+				
+CONT_TIEMPO -> # SCONT_NT #
+
+SCONT_NT -> facil = "numero"
+		| intermedio = "numero"
+		| dificil = "numero"
+				
+
+
+LCONT_SA -> # SCONT_SA #
+
+SCONT_SA ->nombre= "id"# #ruta= "ruta"
+		| ruta= "ruta"# #nombre= "id"
+			
+
+	
+	
+//MODULO USUARIO
+			
+LCONT_USUARIO -> CONT_USUARIO LCONT_USUARIO2
+
+LCONT_USUARIO2 -> CONT_USUARIO LCONT_USUARIO2
+				| Epsilon
+
+
+CONT_USUARIO ->#nombre="id"#
+							
+					
+
+
